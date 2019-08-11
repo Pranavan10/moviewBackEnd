@@ -1,0 +1,14 @@
+C:\MSA\MSA-Phase2-Assessment-BackEnd\moviewBackEnd\moviewBackEnd\bin\Debug\netcoreapp2.2\moviewBackEnd.deps.json
+C:\MSA\MSA-Phase2-Assessment-BackEnd\moviewBackEnd\moviewBackEnd\bin\Debug\netcoreapp2.2\moviewBackEnd.runtimeconfig.json
+C:\MSA\MSA-Phase2-Assessment-BackEnd\moviewBackEnd\moviewBackEnd\bin\Debug\netcoreapp2.2\moviewBackEnd.runtimeconfig.dev.json
+C:\MSA\MSA-Phase2-Assessment-BackEnd\moviewBackEnd\moviewBackEnd\bin\Debug\netcoreapp2.2\moviewBackEnd.dll
+C:\MSA\MSA-Phase2-Assessment-BackEnd\moviewBackEnd\moviewBackEnd\bin\Debug\netcoreapp2.2\moviewBackEnd.pdb
+C:\MSA\MSA-Phase2-Assessment-BackEnd\moviewBackEnd\moviewBackEnd\obj\Debug\netcoreapp2.2\moviewBackEnd.csprojAssemblyReference.cache
+C:\MSA\MSA-Phase2-Assessment-BackEnd\moviewBackEnd\moviewBackEnd\obj\Debug\netcoreapp2.2\moviewBackEnd.csproj.CoreCompileInputs.cache
+C:\MSA\MSA-Phase2-Assessment-BackEnd\moviewBackEnd\moviewBackEnd\obj\Debug\netcoreapp2.2\moviewBackEnd.RazorAssemblyInfo.cache
+C:\MSA\MSA-Phase2-Assessment-BackEnd\moviewBackEnd\moviewBackEnd\obj\Debug\netcoreapp2.2\moviewBackEnd.RazorAssemblyInfo.cs
+C:\MSA\MSA-Phase2-Assessment-BackEnd\moviewBackEnd\moviewBackEnd\obj\Debug\netcoreapp2.2\moviewBackEnd.AssemblyInfoInputs.cache
+C:\MSA\MSA-Phase2-Assessment-BackEnd\moviewBackEnd\moviewBackEnd\obj\Debug\netcoreapp2.2\moviewBackEnd.AssemblyInfo.cs
+C:\MSA\MSA-Phase2-Assessment-BackEnd\moviewBackEnd\moviewBackEnd\obj\Debug\netcoreapp2.2\moviewBackEnd.RazorTargetAssemblyInfo.cache
+C:\MSA\MSA-Phase2-Assessment-BackEnd\moviewBackEnd\moviewBackEnd\obj\Debug\netcoreapp2.2\moviewBackEnd.dll
+C:\MSA\MSA-Phase2-Assessment-BackEnd\moviewBackEnd\moviewBackEnd\obj\Debug\netcoreapp2.2\moviewBackEnd.pdb
