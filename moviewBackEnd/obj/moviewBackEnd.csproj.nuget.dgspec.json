@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\MSA\\MSA-Phase2-Assessment-BackEnd\\moviewBackEnd\\moviewBackEnd\\moviewBackEnd.csproj": {}
+    "C:\\Actual MSA\\moviewBackEnd\\moviewBackEnd\\moviewBackEnd.csproj": {}
   },
   "projects": {
-    "C:\\MSA\\MSA-Phase2-Assessment-BackEnd\\moviewBackEnd\\moviewBackEnd\\moviewBackEnd.csproj": {
+    "C:\\Actual MSA\\moviewBackEnd\\moviewBackEnd\\moviewBackEnd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\MSA\\MSA-Phase2-Assessment-BackEnd\\moviewBackEnd\\moviewBackEnd\\moviewBackEnd.csproj",
+        "projectUniqueName": "C:\\Actual MSA\\moviewBackEnd\\moviewBackEnd\\moviewBackEnd.csproj",
         "projectName": "moviewBackEnd",
-        "projectPath": "C:\\MSA\\MSA-Phase2-Assessment-BackEnd\\moviewBackEnd\\moviewBackEnd\\moviewBackEnd.csproj",
+        "projectPath": "C:\\Actual MSA\\moviewBackEnd\\moviewBackEnd\\moviewBackEnd.csproj",
         "packagesPath": "C:\\Users\\Patch\\.nuget\\packages\\",
-        "outputPath": "C:\\MSA\\MSA-Phase2-Assessment-BackEnd\\moviewBackEnd\\moviewBackEnd\\obj\\",
+        "outputPath": "C:\\Actual MSA\\moviewBackEnd\\moviewBackEnd\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\dotnet\\sdk\\NuGetFallbackFolder"
