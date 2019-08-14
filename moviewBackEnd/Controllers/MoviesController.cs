@@ -77,10 +77,19 @@ namespace moviewBackEnd.Controllers
         [HttpPost]
         public async Task<ActionResult<Movies>> PostMovies(Movies movies)
         {
-            _context.Movies.Add(movies);
-            await _context.SaveChangesAsync();
+            Movies movie = MovieNameExists(movies.Movie);
 
-            return CreatedAtAction("GetMovies", new { id = movies.MovieId }, movies);
+            if (movie == null) {
+                _context.Movies.Add(movies);
+                await _context.SaveChangesAsync();
+                return CreatedAtAction("GetMovies", new { id = movies.MovieId }, movies);
+            }
+            else
+            {
+                return Ok(movie);
+               
+            }
+            
         }
 
         // DELETE: api/Movies/5
@@ -118,6 +127,10 @@ namespace moviewBackEnd.Controllers
         private bool MoviesExists(int id)
         {
             return _context.Movies.Any(e => e.MovieId == id);
+        }
+        private Movies MovieNameExists(string name)
+        {
+            return _context.Movies.Where(e => e.Movie == name).FirstOrDefault();
         }
     }
 }

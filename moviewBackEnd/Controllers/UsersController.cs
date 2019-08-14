@@ -81,10 +81,19 @@ namespace moviewBackEnd.Controllers
         [HttpPost]
         public async Task<ActionResult<Users>> PostUsers(Users users)
         {
-            _context.Users.Add(users);
-            await _context.SaveChangesAsync();
+            Users user = UserIDExists(users.UserId);
+            if (user == null)
+            {
+                _context.Users.Add(users);
+                await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetUsers", new { id = users.UserKey }, users);
+                return CreatedAtAction("GetUsers", new { id = users.UserKey }, users);
+            }
+            else
+            {
+                return Ok(user);
+            }
+            
         }
 
         // DELETE: api/Users/5
@@ -103,13 +112,17 @@ namespace moviewBackEnd.Controllers
             return users;
         }
 
-        [HttpGet("SearchByUser/{searchInt}")]
-        public async Task<ActionResult<IEnumerable<Users>>> Search(int searchInt)
+        [HttpGet("SearchByUser/{searchString}")]
+        public async Task<ActionResult<IEnumerable<Users>>> Search(string searchString)
         {
-            
+            if (String.IsNullOrEmpty(searchString))
+            {
+                return BadRequest("Search string cannot be null or empty.");
+            }
+
 
             // Choose transcriptions that has the phrase 
-            var users = await _context.Users.Where(user => user.UserId == searchInt).Include(user => user.Reviews).ThenInclude(user => user.Movie).ToListAsync();
+            var users = await _context.Users.Where(user => user.UserId == searchString).Include(user => user.Reviews).ThenInclude(user => user.Movie).ToListAsync();
 
             // Removes all videos with empty transcription
             users.RemoveAll(user => user.Reviews.Count == 0);
@@ -120,6 +133,11 @@ namespace moviewBackEnd.Controllers
         private bool UsersExists(int id)
         {
             return _context.Users.Any(e => e.UserKey == id);
+        }
+
+        private Users UserIDExists(string userid)
+        {
+            return _context.Users.Where(e => e.UserId == userid).FirstOrDefault();
         }
     }
 }

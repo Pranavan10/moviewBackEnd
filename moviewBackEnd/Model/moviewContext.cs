@@ -30,7 +30,7 @@ namespace moviewBackEnd.Model
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.HasAnnotation("ProductVersion", "2.2.4-servicing-10062");
+            modelBuilder.HasAnnotation("ProductVersion", "2.2.6-servicing-10079");
 
             modelBuilder.Entity<Movies>(entity =>
             {
@@ -66,6 +66,8 @@ namespace moviewBackEnd.Model
                     .HasName("PK__Users__296ADCF15246A6F9");
 
                 entity.Property(e => e.FullName).IsUnicode(false);
+
+                entity.Property(e => e.UserId).IsUnicode(false);
             });
         }
     }

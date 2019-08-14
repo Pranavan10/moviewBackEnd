@@ -14,7 +14,8 @@ namespace moviewBackEnd.Model
 
         public int UserKey { get; set; }
         [Column("UserID")]
-        public int UserId { get; set; }
+        [StringLength(255)]
+        public string UserId { get; set; }
         [Required]
         [StringLength(255)]
         public string FullName { get; set; }
