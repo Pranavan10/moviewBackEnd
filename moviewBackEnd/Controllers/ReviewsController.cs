@@ -34,7 +34,8 @@ namespace moviewBackEnd.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<Reviews>> GetReviews(int id)
         {
-            var reviews = await _context.Reviews.FindAsync(id);
+            var reviews = await _context.Reviews.Include(m => m.Movie).FirstOrDefaultAsync(r => r.ReviewId == id);
+
 
             if (reviews == null)
             {
@@ -53,25 +54,21 @@ namespace moviewBackEnd.Controllers
                 return BadRequest();
             }
 
-            _context.Entry(reviews).State = EntityState.Modified;
-
-            try
+            if(!ReviewsExists(id))
             {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!ReviewsExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
+                return BadRequest();
             }
 
-            return NoContent();
+            Reviews review = await _context.Reviews.FirstOrDefaultAsync(r => r.ReviewId == id);
+
+            review.Review = reviews.Review;
+            review.Rating = reviews.Rating;
+
+            _context.Reviews.Update(review);
+
+            _context.SaveChanges();
+
+            return Ok();
         }
 
         // POST: api/Reviews
