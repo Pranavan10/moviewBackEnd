@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\MSA\\moviewBackEnd\\moviewBackEnd\\moviewBackEnd.csproj": {}
+    "C:\\Actual MSA\\moviewBackEnd\\moviewBackEnd\\moviewBackEnd.csproj": {}
   },
   "projects": {
-    "C:\\MSA\\moviewBackEnd\\moviewBackEnd\\moviewBackEnd.csproj": {
+    "C:\\Actual MSA\\moviewBackEnd\\moviewBackEnd\\moviewBackEnd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\MSA\\moviewBackEnd\\moviewBackEnd\\moviewBackEnd.csproj",
+        "projectUniqueName": "C:\\Actual MSA\\moviewBackEnd\\moviewBackEnd\\moviewBackEnd.csproj",
         "projectName": "moviewBackEnd",
-        "projectPath": "C:\\MSA\\moviewBackEnd\\moviewBackEnd\\moviewBackEnd.csproj",
-        "packagesPath": "C:\\Users\\Owner\\.nuget\\packages\\",
-        "outputPath": "C:\\MSA\\moviewBackEnd\\moviewBackEnd\\obj\\",
+        "projectPath": "C:\\Actual MSA\\moviewBackEnd\\moviewBackEnd\\moviewBackEnd.csproj",
+        "packagesPath": "C:\\Users\\Patch\\.nuget\\packages\\",
+        "outputPath": "C:\\Actual MSA\\moviewBackEnd\\moviewBackEnd\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Owner\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Patch\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

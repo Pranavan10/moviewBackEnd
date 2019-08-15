@@ -30,7 +30,7 @@ namespace moviewBackEnd
                 options.AddPolicy(MyAllowSpecificOrigins,
                 builder =>
                 {
-                    builder.WithOrigins("http://localhost:3000" , "https://moviewfrontend.azurewebsites.net").AllowCredentials().AllowAnyHeader().AllowAnyMethod();
+                    builder.WithOrigins("http://localhost:3000" , "https://moview.azurewebsites.net").AllowCredentials().AllowAnyHeader().AllowAnyMethod();
 
                 });
             });
